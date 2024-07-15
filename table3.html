@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <table border="2">
+        <thead>
+            <th>column1</th>
+            <th>column2</th>
+            <th>column3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>row1</td>
+                <td>row1cell2</td>
+                <td>row1cell3</td>
+            </tr>
+            <tr>
+                <td>row2</td>
+                <td>row2cell2</td>
+                <td>row2cell3</td>
+            </tr>
+            <tr>
+                <td>row3</td>
+                <td>row3cell2</td>
+                <td>row3cell3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- modifications to make according to given in question -->
+    <table border="2">
+        <thead>
+            <th>column1</th>
+            <th>column2</th>
+            <th>column3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- extand row 1 till 2 -->
+                <td rowspan="2">row1</td>
+                <td>row1cell2</td>
+                <td>row1cell3</td>
+            </tr>
+            <tr>
+                <!-- remove row2 -->
+                <td>row2cell2</td>
+                <td>row2cell3</td>
+            </tr>
+            <tr>
+                <!-- row 3 will expand -->
+                <td colspan="3">row3</td>
+               <!-- remove row3cell2 -->
+                <!-- remove row3cell3 -->
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

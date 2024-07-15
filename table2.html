@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <th>StudentID</th> 
+            <th>StudentName</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>ram</td>
+                <td>female</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>2345</td>
+                <td>sita</td>
+                <td>male</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>3212</td>
+                <td>anu</td>
+                <td>female</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>4531</td>
+                <td>anushka</td>
+                <td>female</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+            </table>
+<!-- we have taken a table and we will perform operations in it now -->
+<!-- lets retake the table and remove the last 2 cells of age and we will perform column expansion in that .. by using rowspan="number of cells to extend" -->
+<table border="1">
+    <thead>
+        <th>StudentID</th> 
+        <th>StudentName</th>
+        <th>Gender</th>
+        <th>Age</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1234</td>
+            <td>ram</td>
+            <td>female</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>2345</td>
+            <td>sita</td>
+            <td>male</td>
+            <!-- expanding column of this age -->
+            <td rowspan="3">34</td>
+        </tr>
+        <tr>
+            <td>3212</td>
+            <td>anu</td>
+            <td>female</td>
+           <!-- age removed -->
+        </tr>
+        <tr>
+            <td>4531</td>
+            <td>anushka</td>
+            <td>female</td>
+            <!-- age removed -->
+        </tr>
+    </tbody>
+    <!-- lets remove 2 columns data -->
+        </table>
+        <table border="1">
+            <thead>
+                <th>StudentID</th> 
+                <th>StudentName</th>
+                <th>Gender</th>
+                <th>Age</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234</td>
+                    <td colspan="3">ram</td>
+                    <!-- column of student name expanded -->
+                    <!-- data of gender and age removed -->
+                </tr>
+                <tr>
+                    <td>2345</td>
+                    <td>sita</td>
+                    <td>male</td>
+                    <td>34</td>
+                </tr>
+                <tr>
+                    <td>3212</td>
+                    <td>anu</td>
+                    <td>female</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td>4531</td>
+                    <td>anushka</td>
+                    <td>female</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+                </table>
+</body>
+</html>
