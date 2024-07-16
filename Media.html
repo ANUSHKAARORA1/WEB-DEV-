@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <!-- Lazy loading is a strategy to identify resources as non-blocking (non-critical) and load these only when needed. -->
+    <img src="download.png" alt="hey image" width="120px" height="120px" loading="lazy">
+<!-- adding audio with atribute controls to make ur audio file visible -->
+ <audio src="c:\Users\p.c\Downloads\file_example_MP3_700KB.mp3" controls></audio>
+ <!-- 2nd method to add audio file  -->
+  <audio controls>
+    <source src="c:\Users\p.c\Downloads\file_example_MP3_700KB.mp3" type="audio/mp3">
+  </audio>
+  <!-- adding video file  -->
+   <video src="c:\Users\p.c\Downloads\WhatsApp Video 2024-07-16 at 14.23.15.mp4" controls width="200px" height="200px"></video>
+   <!-- by using inline frames we can attach maps to our web page -->
+    <!-- use : <iframe src="url" title="description" ></iframe> we can add height width -->
+     <!-- lets add path to our resume from iframe -->
+      <!-- we can ignore writing frameborder -->
+      <iframe src="project1_resume.html"  frameborder="2" width="200px" height="200px"></iframe>
+    <!-- lets add a youtube video in inline frame  -->
+    <!-- choose the video from writing it into google not take directly from  -->
+    <!-- to add youtube video replace word watch with embed in line copied , replace ? with / and remove v= -->
+      <iframe src="https://www.youtube.com/embed/UZ_JZaNQrAw" width="420" height="315"></iframe> 
+    </body>
+</html>
