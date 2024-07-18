@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- we can use group selector by grouping 2 or more elements like grouping of paragrpah and article is shown below -->
+<style>
+    p,article{
+        background-color: blue;
+        font-size: larger;
+        font-style: italic;
+        text-align: end;
+        color: darkorange;
+    }
+</style>
+<style>
+    /* lets style element of paraclass of paragraph only  */
+    p.paraclass{
+        background-color: aquamarine;
+    }
+</style>
+
+</head>
+<body>
+    <h1>Welcome to Webpage 2.0</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque quisquam repellendus nemo atque quod cumque itaque ipsa et. Unde autem voluptas explicabo laboriosam, quidem voluptatibus voluptate a ducimus eaque aperiam, earum reprehenderit tempore voluptates fugit corrupti repellendus impedit deleniti.</p>
+<p>its my first webpage</p>
+<p>my webpage </p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati dignissimos quas commodi! Non facere in unde nisi quibusdam deleniti vel architecto iusto vitae eaque? Itaque aperiam eius, quasi laboriosam libero ex est tempore iste quaerat odit nesciunt dolor soluta nam, sapiente veritatis? Eius aliquam, fuga quam quis ab totam officiis eaque incidunt illo veritatis omnis iusto doloribus facilis maiores placeat?</p>
+<article id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est expedita excepturi odio earum accusantium numquam magnam nulla consequatur ratione!</article>
+<!-- lets try group selector only for paraclass -->
+<h1>Welcome to Webpage 2.0</h1>
+<p class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum neque quisquam repellendus nemo atque quod cumque itaque ipsa et. Unde autem voluptas explicabo laboriosam, quidem voluptatibus voluptate a ducimus eaque aperiam, earum reprehenderit tempore voluptates fugit corrupti repellendus impedit deleniti.</p>
+<p class="paraclass">its my first webpage</p>
+<p >my webpage </p>
+<p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati dignissimos quas commodi! Non facere in unde nisi quibusdam deleniti vel architecto iusto vitae eaque? Itaque aperiam eius, quasi laboriosam libero ex est tempore iste quaerat odit nesciunt dolor soluta nam, sapiente veritatis? Eius aliquam, fuga quam quis ab totam officiis eaque incidunt illo veritatis omnis iusto doloribus facilis maiores placeat?</p>
+<article id="abc" class="paraclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem est expedita excepturi odio earum accusantium numquam magnam nulla consequatur ratione!</article>
+</body>
+</html>

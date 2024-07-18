@@ -1,0 +1,15 @@
+h1{
+    font-size: smaller;
+    text-align: center;
+}
+p{
+    /* now we have 3 options   */
+    /* inline css says to make background aqua */
+    /* internal css says its important to make all  paragraphs voilet */
+    /* external says to make paragraphs coral */
+    /* lets see who is dominant */
+    /* inline is more domianting than internal and least dominanting is external */
+    /* so dominance order if (!important) is not written */
+    /* inline css > internal css > external css */
+    background-color: coral !important;
+}
