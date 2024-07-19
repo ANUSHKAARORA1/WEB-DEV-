@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      p{
+        font-size: medium;
+        font-family: cursive;
+        font-style: italic;
+      }
+        #firstPara{
+            background-color:yellowgreen;
+        }
+        #secondPara{
+              background-color: rgb(210, 207, 30);
+        }
+        #thirdPara{
+            /* first make all values inside bracket 0 then choose the appropritate color */
+           background-color: rgba(36, 228, 235, 1);
+        }
+        .firstclass{
+            /* we will use hex color so go to google and write hexx color picker then write background-color = #ffffff*/
+            /* first 2 f denotes red second 2 f denotes green third 2 f denotes blue */
+            /* background-color: #ffffff ; */
+            background: #ffabff; 
+            /* write anything and get its code for color */
+        }
+        /* hsl is que saturation and lightness */
+        .secondclass{
+            background-color: hsla(182, 53%, 51%, 0.521);
+        }
+    </style>
+</head>
+<body>
+    <!-- we can add colors by usingfollowing ways -->
+     <!-- 1) by directly naming the color -->
+      <!-- 2)by using rgb  how we can add color-->
+       <!-- 3)by using hex -->
+        <!-- 4)by hsl  -->
+      <!-- method  is to write id of each paragraph and then use a #idname to style the paragraph -->
+         <h1>Welcome</h1>
+         <p id="firstPara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, ratione doloremque! Reiciendis porro suscipit repudiandae. Aspernatur nostrum maiores consequuntur asperiores!</p>
+        <br>
+         <p id="secondPara">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus dolor labore illum ullam itaque deleniti optio nihil odio earum voluptatibus dignissimos, tempore impedit alias facilis. Pariatur quod non deserunt distinctio!</p>
+         <br>
+         <p id="thirdPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea corporis molestiae, quod optio itaque dolores, dolorum obcaecati praesentium, culpa maxime eos saepe a quaerat distinctio hic illo. Praesentium illum porro, ea, consectetur iste non ex autem error modi quos odit!</p>
+        <p class="firstclass">Lorem ipsum dolor sit amet.</p>
+        <p class="secondclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, architecto!</p>
+</body>
+</html>
