@@ -1,0 +1,54 @@
+<!-- In CSS, the term "box model" is used when talking about design and layout.
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins. The image below illustrates the box model:
+
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - It is the space between border and content 
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .firstpara{
+        background-color: coral;
+        border: solid brown 5px;
+        width:350px;
+        /* padding: 20px; */
+        margin:30px; 
+         /* to increase gap between 2 boxes use margin */
+         /* to increase gap between content and border use padding */
+        /* we can perform padding individually of left right top bottom */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        /* we can add padding in a shortcut as well : write => padding:top right bottom left */
+       
+    }
+    .secondpara{
+        background-color: burlywood;
+        border: solid brown 5px;
+        width:350px
+    }
+    .thirdpara{
+        background-color: chartreuse;
+        border: solid brown 5px;
+        width:350px
+    }
+</style>
+</head>
+<body>
+    <img src="c:\Users\p.c\Desktop\html\box-model-1.png" >
+    <h1>Welcome </h1>
+    <p class="firstpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore exercitationem error doloribus est porro sint hic earum autem sit reprehenderit?</p>
+<p class="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est recusandae adipisci quae in quas suscipit minima explicabo distinctio, nesciunt mollitia quos velit, voluptatibus soluta sint, ipsum animi iusto aliquid? Placeat!</p>
+<p class="thirdpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ex id, suscipit est voluptatem nihil voluptas facilis illo tempore officiis, quis repudiandae eveniet, ut odio.</p>
+</body>
+</html>

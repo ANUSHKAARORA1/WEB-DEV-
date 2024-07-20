@@ -1,0 +1,45 @@
+<!-- universal selector can be used to select any and all types of elements in an HTML page. The asterisk can also be followed by a selector while using to select a child object. This selector is useful when we want to select all the elements on the page. -->
+<!-- The box-sizing property allows us to include the padding and border in an element's total width and height.
+If you set box-sizing: border-box; on an element, padding, and border are included in the width and height. -->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            /* we have made padding 0, margin 0 */
+        }
+        .firstpara{
+            background-color: coral;
+            border: solid brown 5px;
+            width:350px;
+            /* margin:30px; 
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px; */
+           
+        }
+        .secondpara{
+            background-color: burlywood;
+            border: solid brown 5px;
+            width:350px
+        }
+        .thirdpara{
+            background-color: chartreuse;
+            border: solid brown 5px;
+            width:350px
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Welcome </h1>
+    <p class="firstpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore exercitationem error doloribus est porro sint hic earum autem sit reprehenderit?</p>
+<p class="secondpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est recusandae adipisci quae in quas suscipit minima explicabo distinctio, nesciunt mollitia quos velit, voluptatibus soluta sint, ipsum animi iusto aliquid? Placeat!</p>
+<p class="thirdpara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt ex id, suscipit est voluptatem nihil voluptas facilis illo tempore officiis, quis repudiandae eveniet, ut odio.</p>
+ </body>
+ </html>
