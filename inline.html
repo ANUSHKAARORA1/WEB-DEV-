@@ -1,0 +1,39 @@
+<!-- example of inline is  anchor tag, span-->
+ <!-- property of inline : -->
+  <!-- 1)always try to come in same line -->
+   <!-- 2)take width according to the text width -->
+    <!--3) custom width adn height cannot be applied -->
+    <!-- 5)we can apply margin only in horizontal direction -->
+    <!-- 6)inline can be made block by using display:block; -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* if me write display : inline ; in this box so, width and height can not be customized */
+            width: 300px;
+            height: 300px;
+            border: 1px;
+            border-color: cornflowerblue;
+            border-style: solid;
+        }
+        span{
+            border: 1px solid red;
+            /* inline can be made block by using display:block; */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div>Welcome to my website </div>
+    <span>
+        anushka arora
+    </span>
+    <span>welcome</span>
+    <span>to my home</span>
+</body>
+</html>
