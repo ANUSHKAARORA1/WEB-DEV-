@@ -1,0 +1,42 @@
+<!-- position property tells where and how the element is positioned  -->
+<!-- we can make position static, fixed,sticky,absolute,relative -->
+<!-- we have div, paragraph, article , section etc i want to position it on my webpage/UI so for this we use positioning property-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin: 20px;
+
+        }
+        div{
+            border: 10px solid red;
+        }
+        .image2{
+            /* wonot work as all are by default  static  */
+             /* top: 10px; */
+             /* use relative positioning to bring image a bit below the other images  */
+             position: relative;
+             /* top will bring the image below */
+             top: 200px;
+             /* left will bring image to right */
+             left:200px
+             /* we can use right and bottom as well */
+             /* note: the gap of that image is always mantained even if the image is positioned somewhere else */
+        }
+    </style>
+ </head>
+ <body>
+    <!-- to make div class container write .container and press enter -->
+     <!-- img is inline tag -->
+    <div class="container">
+        <img src="c:\Users\p.c\Desktop\html\images.jpeg" alt="hello" width="200px" height="300px" class="image1">
+        <img src="c:\Users\p.c\Desktop\html\images.png" alt="hello" width="200px" height="300px" class="image2">
+        <img src="c:\Users\p.c\Desktop\html\images (1).jpeg" alt="hello" width="200px" height="300px" class="image3">
+        <img src="c:\Users\p.c\Desktop\html\pngtree-hello-emoji-pack-png-image_5907135.jpg" alt="hello" width="200px" height="300px" class="image4">
+    </div>
+ </body>
+ </html>
