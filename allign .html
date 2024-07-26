@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 4px solid black;
+            margin: 2px;
+            padding:2px;
+            display: flex;
+          flex-wrap: wrap;
+       height: 500px;
+       /* align items : have properties : flex {start,end , center} */
+       /* align items place items according to cross axis default cross axis is vertical */
+      
+       /* we can stretch align-item after removing height */
+       /* by default items will stretch */
+       justify-content: start;
+       align-items: start;
+       /* after running the code u will find some space between the block when u squeez  */
+       /* that space can be removed using align content */
+       align-content: start;
+    }
+        .box{
+            height:200px;
+            width:200px;
+            border: 2px solid yellow;
+            margin: 2px;
+            padding:2px;
+        }
+        #box1{
+             background-color: blue;
+           
+        }
+        #box2{
+          background-color: brown;
+
+        }
+        #box3{
+           background-color: chartreuse;
+        }
+        #box4{
+             background-color: coral;
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+       </div>
+</body>
+</html>

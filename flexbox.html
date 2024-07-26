@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 4px solid black;
+            margin: 2px;
+            padding:2px;
+            /* by default flex direct is row  */
+            display: flex;
+            /* flex items in same row but in reverse direction use: */
+            /* flex-direction: row-reverse; */
+            /* similarily use column , column-reverse */
+          /* flexwrap property is used to property fix the items in the size of container */
+          flex-wrap: wrap;
+          /* flex wrap : wrap does not decrease te size of element it automatically shift items to the next row it doesnot squese until the space is very less decreased */
+       /* by using flex wrap: no wrap boxes wonot go to next line and will squize  */
+       /* flex wrap: wrap reverse will move the first box in next line but doesnot sqeeze itself untill the place is left  */
+       /* justify content (properties: end , start, center , space-{round, around, evenly}) arrange the items according to main axis */
+       /* if flex direction is row so main axis is horizontal */
+       /* if flex direction is column so main axis is vertical */
+       height: 500px;
+       /* justify content : space between (corner boxes are attached to the border of container and all are at gap of each other) */
+       /* justify content : space around ( all are at distance to each other and distance from container) */
+       /* justify content : center (all items are at center no space in between ) */
+       /* jsutify content: space even(eenly distributed space between each box) */
+      justify-content: space-between;
+    }
+        .box{
+            height:200px;
+            width:200px;
+            border: 2px solid yellow;
+            margin: 2px;
+            padding:2px;
+        }
+        #box1{
+             background-color: blue;
+           
+        }
+        #box2{
+          background-color: brown;
+
+        }
+        #box3{
+           background-color: chartreuse;
+        }
+        #box4{
+             background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <img src="c:\Users\p.c\Desktop\html\flex-axis.webp" alt="flexbox model diagram">
+    <!-- flexbox is 1d layout model in whcih we can get different layouts of rectangle boxes etcs -->
+     <!-- flexbox(flexible box )and grib is very imp  -->
+      <!-- flexbox is powerful tool to allign , assign element -->
+       <div class="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+       </div>
+</body>
+</html>
