@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            border: 4px solid black;
+            margin: 2px;
+            padding:2px;
+            display: flex;
+          
+       height: 500px;
+      
+    }
+        .box{
+            height:200px;
+            width:200px;
+            border: 2px solid yellow;
+            margin: 2px;
+            padding:2px;
+        }
+        #box1{
+             background-color: blue;
+             order: 500;
+             /* random order value is given just to change the sequence */
+             /* flex-shrink: 4; */
+             /* box 1 will shrink 4 times faster then other boxes */
+             flex-grow: 5;
+             /* it will grow the box size as if remaning space is left in the box */
+           
+        }
+        #box2{
+          background-color: brown;
+          order: 400;
+          flex-grow: 1;
+
+        }
+        #box3{
+           background-color: chartreuse;
+           flex-grow: 1;
+        }
+        #box4{
+             background-color: coral;
+             flex-grow: 1;
+             flex-basis: 400px;
+             /* can set dimension to the box */
+        }
+    </style>
+</head>
+<body>
+       <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+       </div>
+</body>
+</html>
