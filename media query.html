@@ -1,0 +1,47 @@
+<!-- same website -> on different application(laptops,phones, desktop) renders in different ways -->
+<!-- media query is the tool with help of which we can design that on which display(phones, laptops etc) how our website is going to look like -->
+<!-- xs->extrasmall,l->large,s->small,md,lg,xl->extra larger -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 400px;
+            width: 400px;
+            background-color: aqua;
+            border: 3px solid black;
+            /* lets write media query .. jese he 500 pixcel se chota ho jaega .. chnage the colour */
+           
+        }
+        /* @media(min-width: 500px) 
+            {
+                  .box{
+                    background-color: green;
+                  }
+            } */
+             /* lets do for max width */
+            /* @media(max-width: 500px) 
+            {
+                  .box{
+                    background-color: green;
+                  }
+            } */
+             /*  lets code it ->box will of of green colour if its betwenn width 300 px and 500 px ..  */
+    @media (min-width:300px) and (min-width:500px) {
+       .box{
+        background-color: purple;
+       }
+    }
+    </style>
+ </head>
+ <body>
+    <img src="c:\Users\p.c\Downloads\WhatsApp Image 2024-07-29 at 06.48.34.jpeg" alt="image ss"  width="500px">
+    <div class="box">Hello</div>
+
+ </body>
+ </html>
+
+
