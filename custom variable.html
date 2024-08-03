@@ -1,0 +1,42 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <style>
+        /* :root is the global varibale that can be used */
+        :root{
+          --primary-color:brown;
+          --custom-width:300px;
+        }
+         .container{
+            background-color:blue;
+            height:1000px;
+            border:1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .box{
+            background-color: palevioletred;
+            height:600px;
+            border: 1px solid yellow;
+            margin: 5px;
+            padding: 4px;
+            width:var(--custom-width);
+            box-shadow: 20px 15px var(--primary-color);
+  
+         }
+       </style>
+    </head>
+    <body>
+       <div class="container">
+           <div class="box">
+            <img src="c:\Users\p.c\Desktop\html\slogan-hey-text-style-design-260nw-2138568763.webp"></img>
+            <h1>welcome</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta mollitia minima corporis dignissimos tenetur explicabo aliquam velit. Nihil, dolorem nam.</p>
+           </div>
+       </div>
+    </body>

@@ -1,0 +1,51 @@
+<!-- 2 types of shadow -> text , box -->
+ <!-- if given positive number so shadow will be right side and if given -ve number shadow will be on left -->
+  <!-- x-offset shadow in x axis  -->
+   <!-- y offset shadow in y axis -->
+    <!-- blur radius-> blur kitna bada hoga or kitne dur tak spread hoga -->
+    <!-- inset se shadow box ke andar aege  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container{
+         background-color:blue;
+         height:1000px;
+         border:1px solid black;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+      .box{
+         background-color: palevioletred;
+         height:600px;
+         border: 1px solid yellow;
+         margin: 5px;
+         padding: 4px;
+         /* shadow in right box-shadow : x direction y direction colour */
+         box-shadow: 20px 15px plum;
+         /* shadow in left box-shadow: -x y colour */
+         /* shadow with blur box shadow: x y blur colour */
+         box-shadow: 20px 15px 15px pink;
+         /*  as if blur radius increases colour becomes more blur  */
+         /* spread radius: shadow kitne spread hoge  */
+         /* box shadow: x y blur spread colour */
+         box-shadow: 30px 30px 20px 20px yellow;
+         /* add multiple shadows together  */
+         box-shadow: 20px 20px 20px green ,30px 30px 30px aqua;
+      }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="box">
+         <img src="c:\Users\p.c\Desktop\html\slogan-hey-text-style-design-260nw-2138568763.webp"></img>
+         <h1>welcome</h1>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta mollitia minima corporis dignissimos tenetur explicabo aliquam velit. Nihil, dolorem nam.</p>
+        </div>
+    </div>
+ </body>
+ </html>
